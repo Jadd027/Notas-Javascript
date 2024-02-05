@@ -1,0 +1,71 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="./estilos.css">
+    <script src="./logica.js"></script>
+    <title>Promedio de Notas</title>
+</head>
+
+<body>
+    <div class="alert alert-success titulo" role="alert">
+        <h1>Promedio de Notas</h1>
+    </div>
+
+    <div class="Contenedor">
+        <p>Elaborar un algoritmo, para calcular el promedio final de una materia de algoritmos. Dicha calificación se
+            compone de los siguientes porcentajes:</p>
+
+        <ul>
+            <li>55% del promedio final de sus calificaciones parciales (se
+                compone de 3 notas).</li>
+            <li>30% Examen parcial (1 nota)</li>
+            <li>15% de la calificación del trabajo final.</li>
+        </ul>
+
+        <p>En total se capturan 5 notas.</p>
+
+        <div>
+            <form action="" method="get">
+                <!-- NOTAS DE LOS TALLLERES -->
+
+                <label for="NotaTaller1">Nota del Taller 1</label>
+                <input type="number" class="my-2" min="00" max="5.0" step="0.1" id="NotaTaller1">
+                <br>
+
+                <label for="NotaTaller2">Nota del Taller 2</label>
+                <input type="number" class="my-1" min="0" max="5.0" step="0.1" id="NotaTaller2">
+                <br>
+
+                <label for="NotaTaller3">Nota del Taller 3</label>
+                <input type="number" class="my-1" min="0" max="5.0" step="0.1" id="NotaTaller3">
+                <br>
+
+                <!-- NOTA DEL PARCIAL -->
+
+                <label for="NotaPacial">Nota del Examen Parcial</label>
+                <input type="number" class="my-1" min="0" max="5.0" step="0.1" id="NotaPacial">
+                <br>
+
+                <!-- NOTA DEL TRABAJO FINAL -->
+
+                <label for="TrabajoFinal">Nota del Trabajo Final</label>
+                <input type="number" placeholder=" " class="my-2" min="1.0" step="0.1" max="5.0" id="TrabajoFinal">
+                <br>
+
+                <!-- PROMEDIO FINAL -->
+                
+                <label for="Promedio">El promedio Final de todas las notas digitadas es de : </label>
+                <input type="number" readonly id="Promedio" placeholder="Nota Final">
+            </form>
+        </div>
+    </div>
+
+</body>
+
+</html>
